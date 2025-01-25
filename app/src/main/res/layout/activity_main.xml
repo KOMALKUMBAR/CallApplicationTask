@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <!-- Username TextInputLayout with start icon -->
+
+    <!-- Input for Phone Number -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        app:endIconMode="custom">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter phone number"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Button to Make a Call -->
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make Call"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_button"
+        />
+
+    <!-- Button to View Contacts -->
+    <Button
+        android:id="@+id/viewContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Contacts"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_button"
+        />
+
+    <!-- Button to View Call Logs -->
+    <Button
+        android:id="@+id/viewCallLogs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Call Logs"
+        android:layout_marginTop="10dp"
+
+        android:background="@drawable/rectangle_button"
+        />
+
+</LinearLayout>
